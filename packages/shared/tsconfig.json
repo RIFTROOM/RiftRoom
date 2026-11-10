@@ -2,8 +2,8 @@
   "compilerOptions": {
     "target": "es2023",
     "lib": ["ES2023"],
-    "module": "esnext",
-    "moduleResolution": "bundler",
+    "module": "nodenext",
+    "moduleResolution": "nodenext",
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
     "skipLibCheck": true,
@@ -11,7 +11,8 @@
     "noEmit": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "erasableSyntaxOnly": true
+    "erasableSyntaxOnly": true,
+    "types": []
   },
   "include": ["src"]
 }

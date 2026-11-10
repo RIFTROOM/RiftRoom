@@ -22,3 +22,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Env files (keep the examples)
+.env
+.env.*
+!.env.example
+
+# Generated code
+apps/api/src/generated/
+*.tsbuildinfo

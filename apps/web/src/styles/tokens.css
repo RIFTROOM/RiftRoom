@@ -1,0 +1,81 @@
+/*
+ * RIFTROOM design tokens.
+ * Dark-only theme: near-black with a violet cast, violet → indigo accents.
+ */
+:root {
+  /* Surfaces */
+  --rr-bg: #0b0a12;
+  --rr-bg-elevated: #110f1a;
+  --rr-surface: #15131f;
+  --rr-surface-2: #1c1929;
+  --rr-surface-hover: #221e32;
+  --rr-border: rgb(255 255 255 / 0.07);
+  --rr-border-strong: rgb(255 255 255 / 0.13);
+
+  /* Text */
+  --rr-text: #eceaf5;
+  --rr-text-muted: #a19db8;
+  --rr-text-subtle: #6f6a88;
+  --rr-text-on-accent: #ffffff;
+
+  /* Accent */
+  --rr-violet-300: #c4b5fd;
+  --rr-violet-400: #a78bfa;
+  --rr-violet-500: #8b5cf6;
+  --rr-violet-600: #7c3aed;
+  --rr-indigo-400: #818cf8;
+  --rr-indigo-500: #6366f1;
+  --rr-accent: var(--rr-violet-500);
+  --rr-accent-text: var(--rr-violet-300);
+  --rr-accent-soft: rgb(139 92 246 / 0.14);
+  --rr-accent-gradient: linear-gradient(135deg, var(--rr-violet-500) 0%, var(--rr-indigo-500) 100%);
+  --rr-accent-gradient-hover: linear-gradient(135deg, var(--rr-violet-400) 0%, var(--rr-indigo-400) 100%);
+  --rr-focus-ring: 0 0 0 3px rgb(139 92 246 / 0.45);
+
+  /* Status */
+  --rr-danger: #f87171;
+  --rr-danger-soft: rgb(248 113 113 / 0.12);
+  --rr-success: #34d399;
+  --rr-success-soft: rgb(52 211 153 / 0.12);
+  --rr-warning: #fbbf24;
+
+  /* Typography */
+  --rr-font-sans: 'Inter', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --rr-font-display: 'Space Grotesk', var(--rr-font-sans);
+  --rr-font-mono: ui-monospace, 'SF Mono', 'JetBrains Mono', Menlo, monospace;
+  --rr-text-xs: 0.75rem;
+  --rr-text-sm: 0.875rem;
+  --rr-text-md: 1rem;
+  --rr-text-lg: 1.125rem;
+  --rr-text-xl: 1.375rem;
+  --rr-text-2xl: 1.75rem;
+  --rr-text-3xl: 2.25rem;
+
+  /* Spacing (4px grid) */
+  --rr-space-1: 0.25rem;
+  --rr-space-2: 0.5rem;
+  --rr-space-3: 0.75rem;
+  --rr-space-4: 1rem;
+  --rr-space-5: 1.25rem;
+  --rr-space-6: 1.5rem;
+  --rr-space-8: 2rem;
+  --rr-space-10: 2.5rem;
+  --rr-space-12: 3rem;
+
+  /* Shape & depth */
+  --rr-radius-sm: 8px;
+  --rr-radius-md: 12px;
+  --rr-radius-lg: 16px;
+  --rr-radius-xl: 22px;
+  --rr-radius-full: 999px;
+  --rr-shadow-card: 0 1px 0 rgb(255 255 255 / 0.04) inset, 0 12px 32px -12px rgb(0 0 0 / 0.6);
+  --rr-shadow-glow: 0 8px 28px -8px rgb(124 58 237 / 0.65);
+
+  /* Motion */
+  --rr-ease: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --rr-duration: 160ms;
+
+  /* Layout */
+  --rr-sidebar-width: 248px;
+  --rr-header-height: 64px;
+}

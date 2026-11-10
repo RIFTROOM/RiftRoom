@@ -1,0 +1,20 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--rr-space-3);
+}
+
+.wordmark {
+  font-family: var(--rr-font-display);
+  font-size: var(--rr-text-lg);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--rr-text);
+}
+
+.wordmark span {
+  background: var(--rr-accent-gradient-hover);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}

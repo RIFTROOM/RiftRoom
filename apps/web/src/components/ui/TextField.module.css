@@ -1,0 +1,108 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rr-space-2);
+}
+
+.label {
+  font-size: var(--rr-text-sm);
+  font-weight: 500;
+  color: var(--rr-text);
+}
+
+.control {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--rr-bg-elevated);
+  border: 1px solid var(--rr-border-strong);
+  border-radius: var(--rr-radius-md);
+  transition:
+    border-color var(--rr-duration) var(--rr-ease),
+    box-shadow var(--rr-duration) var(--rr-ease);
+}
+
+.control:hover {
+  border-color: rgb(255 255 255 / 0.2);
+}
+
+.control:focus-within {
+  border-color: var(--rr-violet-500);
+  box-shadow: var(--rr-focus-ring);
+}
+
+.invalid,
+.invalid:hover {
+  border-color: var(--rr-danger);
+}
+
+.invalid:focus-within {
+  box-shadow: 0 0 0 3px rgb(248 113 113 / 0.3);
+}
+
+.input {
+  flex: 1;
+  min-width: 0;
+  height: 46px;
+  padding: 0 var(--rr-space-4);
+  background: transparent;
+  border: 0;
+  border-radius: inherit;
+  /* 16px prevents iOS Safari from zooming in on focus. */
+  font-size: 1rem;
+}
+
+.input:focus,
+.input:focus-visible {
+  outline: none;
+  box-shadow: none;
+}
+
+.input::placeholder {
+  color: var(--rr-text-subtle);
+}
+
+.input:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Keep autofilled fields on-theme in Chromium/Safari. */
+.input:-webkit-autofill {
+  -webkit-text-fill-color: var(--rr-text);
+  -webkit-box-shadow: 0 0 0 100px var(--rr-bg-elevated) inset;
+  caret-color: var(--rr-text);
+}
+
+.reveal {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 3px;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  border-radius: var(--rr-radius-sm);
+  color: var(--rr-text-subtle);
+  cursor: pointer;
+}
+
+.reveal:hover {
+  color: var(--rr-text);
+  background: var(--rr-surface-2);
+}
+
+.error,
+.hint {
+  font-size: var(--rr-text-xs);
+  line-height: 1.4;
+}
+
+.error {
+  color: var(--rr-danger);
+}
+
+.hint {
+  color: var(--rr-text-subtle);
+}
